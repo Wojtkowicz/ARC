@@ -14,7 +14,6 @@ import re
 # Student Name: Jakub Wojtkowicz
 # ID: 17451684
 # GitHub Repository: https://github.com/Wojtkowicz/ARC
-#
 
 
 # ------------------------------------------------------------------------------------------
@@ -236,6 +235,29 @@ def solve_54d82841(x):
 
     # return input grid with yellow pixels added
     return new_grid
+
+# ------------------------------------------------------------------------------------------
+
+# Summary/Reflection:
+
+# Python features and libraries used in the solve methods include: numpy arrays, various numpy libraries/methods
+# such as copy, list comprehensions, grouping code in methods, enumerate, len, indexing, slicing, while loop,
+# for loop, else, if, integer casting, inverting arrays to access columns, range. These proved to be invaluable and also
+# made the code more efficient and more readable.
+
+# Some solve functions were similar in the fact that beginning steps such as identifying divides in a grid were similar
+# and this is why I made my solve function's logic modular and in methods so that they can be easily used in other
+# places if needed. The methods were constructed in a dynamic way and in this example that could take the an argument
+# consisting of the grid, axis and the divide pixel colour and would return all the locations a divide it is found. This
+# was used for both the horizontal and vertical divides of any grid size and shape.
+
+# Since the grids were arrays all the solutions used numpy in some way, this made them quite similar and made the tasks
+# easier to implement as my np array manipulation improved. This commonality allowed me to learn/use a certain numpy
+# library such as copy or append and made the next task solving implementation design more streamlined and efficient
+# quicker.
+
+# The large amount of array accessing and manipulation across all task implementations aided in nicer code as using
+# python "shortcuts" such as a python list comprehension allowed me to do more with less code.
 
 # ------------------------------------------------------------------------------------------
 
